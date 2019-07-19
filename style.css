@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 100%;
+  padding-bottom: 2.5%;
+  background: #ccc;
+  float: left;
+  list-style: none;
+  display: block;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+ul li {
+  width: 30%;
+  margin: 2.5% 0 0 2.5%;
+  float: left;
+  position: relative;
+  /* the position will help with z-indexing later */
+  transition: all 0.6s ease;
+  opacity: 0.5;
+}
+
+li:hover {
+  transform: scale(1.4);
+  opacity: 1;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+ul li img {
+  max-width: 100%;
+  box-sizing: border-box;
+  /* changing box-sizing to border-box means that "instead of the border being in addition to the image’s width/height, it is applied within the image’s width/height" */
+  border: 2px solid #eee;
+  float: left;
+}
+
+.gallery-container {
+  width: 30%;
+  margin: 0 auto;
+}
