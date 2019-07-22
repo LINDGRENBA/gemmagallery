@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 
 ul {
@@ -25,7 +26,47 @@ ul li {
   opacity: 0.5;
 }
 
-li:hover {
+/* ENLARGE ON HOVER */
+.gal-1 li:hover {
+  transform: scale(1.4);
+  opacity: 1;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* ENLARGE AND ROTATE ON HOVER */
+.gal-2 li:hover{
+  transform: scale(1.4) rotate(360deg);
+  opacity: 1;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+
+/* SKEWED GALLERY */
+.gal-3 li:nth-of-type(1){
+  transform: rotate(10deg) translate(10px, 0);
+}
+
+.gal-3 li:nth-of-type(2){
+  transform: rotate(-10deg) translate(0, 10px);
+}
+
+.gal-3 li:nth-of-type(3){
+  transform: rotate(10deg) translate(-5px, 5px);
+}
+
+.gal-3 li:nth-of-type(4){
+  transform: rotate(-20deg) translate(10px, -10px);
+}
+.gal-3 li:nth-of-type(5){
+  transform: rotate(10deg) translate(-5px, -10px);
+}
+.gal-3 li:nth-of-type(6){
+  transform: rotate(-15deg) translate(-5px, -10px);
+}
+
+.gal-3 li:hover {
   transform: scale(1.4);
   opacity: 1;
   box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
